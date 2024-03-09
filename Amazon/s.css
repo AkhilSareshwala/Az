@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    font-family: Amazon Ember Medium, Arial, sans-serif;
+}
+/* Over all border */
+.border {
+    border: 0.125rem solid transparent;
+    border-radius: 2px;
+}
+
+.border:hover {
+    border: 0.09375rem solid white;
+    cursor: pointer;
+}
+.flx{
+    height: 3.5rem;
+    width: 7.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --------------------------navbar-------------------------- */
+.nbar{
+    height: 4rem;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navlogo img {
+    height: 1.5rem;
+    width: 3.25rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.navadd{
+    height: 3.5rem;
+    width: 7.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.addfirst {
+    color: #cccccc;
+    font-size: 0.75rem;
+    margin-left: 1rem;
+} 
+.addsecond {
+    font-size: 0.875rem;
+    margin-left: 0.1875rem;
+    font-weight: 700;
+    
+}
+.addicon {
+    display: flex;
+    align-items: center;
+}
+.border2:hover {
+    border: 0.09375rem solid white;
+    height: 3.5rem;
+}
+
+
+.nav-search {
+    display: flex;
+    height: 2.5rem;
+    width: 38.75rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    text-align: center;
+    background-color: #ff8484;
+    margin-left: 1rem;
+    border-radius: 0.25rem;
+    justify-content: space-evenly;
+}
+.nav-search:hover {
+    border: 0.125rem solid orange;
+}
+.search-option1 {
+    background-color: #f3f3f3;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    width: 3.125rem;
+    text-align: center;
+    border: none;
+}
+input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon {
+    width: 2.8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 156, 4, 0.849);
+    font-size: 1.2rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    color: #0f1111;
+}
+
+
+
+.lanoption {
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: small;
+}
+.languageoption img{
+    height: 2rem;
+    width: 4rem;
+}
+
+
+.hello {
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+}
+.account-sign {
+    font-size: 0.875rem;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+
+.return {
+    font-size: 0.75rem;
+}
+
+.order {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+
+
+.cart i {
+    font-size: 1.875rem;
+}
+
+
+.second-nav {
+    height: 3rem; 
+    width: 100%;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*----------------------- second nav -----------------------------*/
+.second-nav .cnt{
+    position: relative;
+    left: 1rem;
+    top: 0.6rem;
+}
+.flx2{
+    display: flex;
+    width: 5.625rem;
+    height: 2.25rem;
+    align-items: flex-start;
+}
+.second-nav .panel-ops{
+    width: 75%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.second-nav .flx{
+    height: 2.5rem;
+    width: 4.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.second-nav .deals{
+    font-weight: bolder;
+    font-size: .8rem;
+}
+
+/* hidden */
+.hdn{
+    position: absolute;
+   top:0; left: -100%;;
+   width: 25rem;
+   z-index: 1100;
+   background-color: rgb(252, 250, 250);
+   height: 100vh;
+   font-family: cursive;
+   overflow-y: scroll;
+}
+.hdn.active{
+    left: 0;
+}
+
+.hdn .box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 97%;
+    height: 10rem;
+    border-bottom: .1rem solid black;
+}
+/*------------------------- main-------------- */
+.main {
+    background-image: url(https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg);
+    height: 25rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.msg {
+    font-size: 0.875rem;
+    background-color: #f5f6f6;
+    width: 65rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5625rem;
+}
+
+.msg a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    background-color: #e2e7e6;
+    padding-left: 3rem;
+}
+
+
+.box {
+    height: 25rem;
+    width: 25rem;
+    background-color: white;
+    padding: 1.25rem 0 0.9375rem;
+    margin: 0.5rem;
+}
+
+.shop1 {
+    font-size: 1rem;
+}
+
+.box1-img {
+    height: 18.75rem;
+    background-size: cover;
+    margin-top: 0.0625rem;
+    margin-bottom: 0.0625rem;
+}
+
+.box1-content {
+    margin-left: 0.0625rem;
+    margin-right: 0.0625rem;
+}
+
+.shop p a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 0.9375rem;
+}
+
+/* -------------------------footer--------------------------------------------- */
+
+
+footer {
+    margin-top: 0.9375rem;
+}
+
+.firstpanel {
+    height: 3.125rem;
+    background-color: #232F3E;
+    color: white;
+    font-size: 0.8125rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.secondpanel {
+    background-color: #333;
+    color: white;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
+}
+.secondpanel p{
+    font-weight: bold;
+    font-size: medium;
+}
+ul {
+    margin-top: 1.25rem;
+}
+
+ul a {
+    display: block;
+    font-size: 0.875rem;
+    margin-top: 0.9375rem;
+    color: #dddddd;
+    cursor: pointer;
+}
+
+.thirdpanel {
+    background-color: #333;
+    color: white;
+    border-top: 0.03125rem solid #848688;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.copyright {
+    margin-top: 0.3125rem;
+}
